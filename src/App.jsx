@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/message")
+    fetch("https://vercel-frontend-dun-mu.vercel.app/api/message")
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((err) => {
